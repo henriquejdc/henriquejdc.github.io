@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -14,8 +14,8 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link type="image/png" sizes="16x16" rel="icon" href="images/icons/icons8-developers-flat-16.png">
-  <link type="image/png" sizes="32x32" rel="icon" href="images/icons/icons8-developers-32.png">
-  <link type="image/png" sizes="96x96" rel="icon" href="images/icons/icons8-developers-96.png">
+  <link type="image/png" sizes="32x32" rel="icon" href="images/icons/icons8-developers-flat-32.png">
+  <link type="image/png" sizes="96x96" rel="icon" href="images/icons/icons8-developers-flat-96.png">
   <!-- MAIN STYLE -->
   <link rel="stylesheet" href="css/tooplate-style.css">
 </head>
@@ -37,27 +37,51 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+            <a href="#about" class="nav-link">
+                <span data-hover="About" lang="en">About</span>
+                <span data-hover="About" lang="pt">Sobre</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+            <a href="#project" class="nav-link">
+                <span data-hover="Projects" lang="en">Projects</span>
+                <span data-hover="Projects" lang="pt">Projetos</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+            <a href="#resume" class="nav-link">
+                <span data-hover="Resume" lang="en">Resume</span>
+                <span data-hover="Resume" lang="pt">Currículo</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+            <a href="#contact" class="nav-link">
+                <span data-hover="Contact" lang="en">Contact</span>
+                <span data-hover="Contact" lang="pt">Contato</span>
+            </a>
           </li>
+        </ul>
+
+        <ul class="navbar-nav ml-lg-auto">
+            <div class="ml-lg-4">
+              <div class="change-language d-lg-flex justify-content-center align-items-center">
+                <span lang="en">Change language</span>
+                <span lang="pt">Trocar idioma</span>
+              </div>
+            </div>
+          </ul>
         </ul>
 
         <ul class="navbar-nav ml-lg-auto">
           <div class="ml-lg-4">
             <div class="color-mode d-lg-flex justify-content-center align-items-center">
               <i class="color-mode-icon"></i>
-              Change color theme
+              <span lang="en">Change color theme</span>
+              <span lang="pt">Trocar cor do tema</span>
             </div>
           </div>
         </ul>
+
       </div>
     </div>
   </nav>
@@ -75,26 +99,44 @@
 
         <div class="col-lg-8 col-md-12 col-12 d-flex align-items-center">
           <div class="about-text">
-            <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+            <small class="small-text" lang="en">Welcome to 
+                <span class="mobile-block">my portfolio website!</span>
+            </small>
+            <small class="small-text" lang="pt">Bem vindo ao
+                <span class="mobile-block">meu site portifólio!</span>
+            </small>
             <h1 class="animated animated-text">
-              <span class="mr-2">Hey folks, I'm</span>
+              <span class="mr-2" lang="en">Hey folks, I'm</span>
+              <span class="mr-2" lang="pt">Ei pessoal, eu sou</span>
               <div class="animated-info">
                 <span class="animated-item">Henrique Dalla Corte</span>
-                <span class="animated-item">Backend Engineer</span>
-                <span class="animated-item">Full Stack Developer</span>
-                <span class="animated-item">Django Developer</span>
+                <span class="animated-item" lang="en">Backend Engineer</span>
+                <span class="animated-item" lang="en">Full Stack Developer</span>
+                <span class="animated-item" lang="en">Django Developer</span>
+                <span class="animated-item" lang="pt">Engenheiro Backend</span>
+                <span class="animated-item" lang="pt">Desenvolvedor Full Stack</span>
+                <span class="animated-item" lang="pt">Desenvolvedor Django</span>
               </div>
             </h1>
 
-            <p>I am a Bachelor of Science in Computer Science from Federal University and 6 postgraduate degrees (Management, UX/UI, Sofware Engineer, Cloud Projects, LGPD and Educational Methodologies) 
+            <p lang="en" class="mt-4">I am a Bachelor of Science in Computer Science from Federal University and with 6 postgraduate degrees (Management, UX/UI, Sofware Engineer, Cloud Projects, LGPD and Educational Methodologies) 
                 and an accounting technician.</p>
 
+            <p lang="pt" class="mt-4">Sou bacharel em Ciência da Computação pela Universidade Federal e com 6 pós-graduações (Gestão, UX/UI, Engenheiro de Sofware, Projetos em Nuvem, LGPD e Metodologias Educacionais)
+                e um técnico em contabilidade.</p>
+
             <div class="custom-btn-group mt-4">
-                <a download href="files/Henrique_J__D__Corte_en_US.pdf" class="btn mr-lg-2 custom-btn" target="_blank"><i class='uil uil-file-alt' black></i> Download Resume English Version</a>
+                <a download href="files/Henrique_J__D__Corte_en_US.pdf" class="btn mr-lg-2 custom-btn" target="_blank" lang="en"><i class='uil uil-file-alt' black></i>
+                    Download Resume English Version</a>
+                <a download href="files/Henrique_J__D__Corte_en_US.pdf" class="btn mr-lg-2 custom-btn" target="_blank" lang="pt"><i class='uil uil-file-alt' black></i>
+                    Baixar Currículo na Versão em Inglês</a>
             </div>
 
             <div class="custom-btn-group mt-4">
-                <a download href="files/Henrique_J__D__Corte.pdf" class="btn mr-lg-2 custom-btn" target="_blank"><i class='uil uil-file-alt'></i> Download Resume Portuguese Version</a>            
+                <a download href="files/Henrique_J__D__Corte.pdf" class="btn mr-lg-2 custom-btn" target="_blank" lang="en"><i class='uil uil-file-alt'></i>
+                    Download Resume Portuguese Version</a>     
+                <a download href="files/Henrique_J__D__Corte.pdf" class="btn mr-lg-2 custom-btn" target="_blank" lang="pt"><i class='uil uil-file-alt'></i>
+                    Baixar Currículo na Versão em Português</a>          
             </div>
           </div>
         </div>
@@ -111,8 +153,15 @@
         <div class="col-lg-11 text-center mx-auto col-12">
 
           <div class="col-lg-8 mx-auto">
-            <h2>Projects developed by me.</h2>
-            <h3><small style="color: #4b3cd8">Click on the image to see the project in the github repository.</small></h4>
+            <h2 lang="en">Projects developed by me.</h2>
+            <h3>
+                <small style="color: #4b3cd8" lang="en">
+                    Click on the image to see the project in the github repository.
+                </small>
+                <small style="color: #4b3cd8" lang="pt">
+                    Clique na imagem para ver o projeto no repositório do github.
+                </small>
+            </h4>
             <br>
           </div>
 
@@ -124,8 +173,11 @@
                   data-icon="octicon-star"
                   data-size="large"
                   data-show-count="true"
-                  aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-                  <h4>Angular 13 CRUD with Angular Material UI | json-server | Angular Reactive Form.</h4>
+                  aria-label="Star ntkme/github-buttons on GitHub">
+                  <span lang="en">Star</span>
+                  <span lang="pt">Favoritar</span></a>
+                  <h4 lang="en">Angular 13 CRUD with Angular Material UI | json-server | Angular Reactive Form.</h4>
+                  <h4 lang="pt">Angular 13 CRUD com Angular Material UI | json-server | Angular Reactive Form.</h4>
                   <a href="https://github.com/henriquejdc/CRUD-Angular-MatUI-JsonServer" target="_blank">
                     <img src="images/project/project1.png" class="img-fluid" alt="Mini erp">
                   </a>
@@ -139,8 +191,11 @@
                   data-icon="octicon-star"
                   data-size="large"
                   data-show-count="true"
-                  aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-                  <h4>CRUD with Angular + Data Table and Spring Boot API.</h4>
+                  aria-label="Star ntkme/github-buttons on GitHub">
+                  <span lang="en">Star</span>
+                  <span lang="pt">Favoritar</span></a>
+                  <h4 lang="en">CRUD with Angular + Data Table and Spring Boot API.</h4>
+                  <h4 lang="pt">CRUD com Angular + Data Table e Spring Boot API.</h4>
                   <a href="https://github.com/henriquejdc/AngularSpringDataTable" target="_blank">
                     <img src="images/project/project2.png" class="img-fluid" alt="project image">
                   </a>
@@ -154,8 +209,11 @@
                   data-icon="octicon-star"
                   data-size="large"
                   data-show-count="true"
-                  aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-                  <h4>E-commerce Website With Django Rest Framework + Vue.</h4>
+                  aria-label="Star ntkme/github-buttons on GitHub">
+                  <span lang="en">Star</span>
+                  <span lang="pt">Favoritar</span></a>
+                  <h4 lang="en">E-commerce Website With Django Rest Framework + Vue.</h4>
+                  <h4 lang="pt">E-commerce Website com Django Rest Framework + Vue.</h4>
                   <a href="https://github.com/henriquejdc/Ecommerce-Vue-DjangoRest" target="_blank">
                     <img src="images/project/project3.png" class="img-fluid" alt="project image">
                   </a>
@@ -169,8 +227,11 @@
                   data-icon="octicon-star"
                   data-size="large"
                   data-show-count="true"
-                  aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-                  <h4>CRUD Basic ReactJs</h4>
+                  aria-label="Star ntkme/github-buttons on GitHub">
+                  <span lang="en">Star</span>
+                  <span lang="pt">Favoritar</span></a>
+                  <h4 lang="en">CRUD Basic ReactJs</h4>
+                  <h4 lang="pt">CRUD Básico ReactJs</h4>
                   <a href="https://github.com/henriquejdc/CRUD-ReactJs" target="_blank">
                     <img src="images/project/project4.png" class="img-fluid" alt="project image">
                   </a>
@@ -184,8 +245,11 @@
                 data-icon="octicon-star"
                 data-size="large"
                 data-show-count="true"
-                aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-                <h4>REST API for a Pizza delivery service built with FastAPI, SQLAlchemy and PostgreSQL</h4>
+                aria-label="Star ntkme/github-buttons on GitHub">
+                <span lang="en">Star</span>
+                <span lang="pt">Favoritar</span></a>
+                <h4 lang="en">REST API for a Pizza delivery service built with FastAPI, SQLAlchemy and PostgreSQL</h4>
+                <h4 lang="pt">REST API para Serviço de Entrega de Pizzas feito com FastAPI, SQLAlchemy e PostgreSQL</h4>
                   <a href="https://github.com/henriquejdc/Pizza-Delivery-FastAPI-SQLAlchemy-PostgreSQL" target="_blank">
                     <img src="images/project/project5.png" class="img-fluid" alt="project image">
                   </a>
@@ -199,8 +263,11 @@
                 data-icon="octicon-star"
                 data-size="large"
                 data-show-count="true"
-                aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-                <h4>Notes Application with ReactJS & Django.</h4>
+                aria-label="Star ntkme/github-buttons on GitHub">
+                <span lang="en">Star</span>
+                <span lang="pt">Favoritar</span></a>
+                <h4 lang="en">Notes Application with ReactJS & Django.</h4>
+                <h4 lang="pt">Aplicação de notas com ReactJS e Django.</h4>
                   <a href="https://github.com/henriquejdc/Reacjs-Django-Rest-Framework" target="_blank">
                     <img src="images/project/project6.png" class="img-fluid" alt="project image">
                   </a>
@@ -218,7 +285,8 @@
       <div class="row">
 
         <div class="col-lg-6 col-12">
-          <h2 class="mb-4">Experiences</h2>
+          <h2 class="mb-4" lang="en">Experiences</h2>
+          <h2 class="mb-4" lang="pt">Experiências</h2>
 
           <div class="timeline">
             <div class="timeline-wrapper">
@@ -226,12 +294,23 @@
                 <span>2022</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Full Stack Web Developer</span><small>Neoprospecta</small></h3>
-                <h6>Jan 2022 – Present</h6>
-                <p>Back-End Developer Django / Django Rest Framework with TDD and Unit Testing in software for
+                <h3>
+                    <span lang="en">Full Stack Web Developer</span>
+                    <span lang="pt">Desenvolvedor Web Full Stack</span>
+                    <small>Neoprospecta</small>
+                </h3>
+                <h6 lang="en">Jan 2022 – Present</h6>
+                <h6 lang="pt">Jan 2022 – Presente</h6>
+                <p lang="en">Back-End Developer Django / Django Rest Framework with TDD and Unit Testing in software for
                     biotechnology solutions. Development of features and maintenance in Angular.<br>
                     Bitbucket / Confluence / Jira / Web Crawling / Google Cloud Platform (GCP) /
                     Linux / PostgreSQL / Agile Methodologies / REST APIs / Python / Django REST
+                    Framework / TypeScript / Django / Bootstrap / AngularJS / Angular.</p>
+                <p lang="pt">Desenvolvedor Back-End Django / Django Rest Framework com TDD 
+                    e tests Unitários para um software de soluções biotecnologicas. 
+                    Desenvolvimento de incrementos e manutenção em Angular.<br>
+                    Bitbucket / Confluence / Jira / Web Crawling / Google Cloud Platform (GCP) /
+                    Linux / PostgreSQL / Metodologias Ágeis / REST APIs / Python / Django REST
                     Framework / TypeScript / Django / Bootstrap / AngularJS / Angular.</p>
               </div>
             </div>
@@ -241,12 +320,22 @@
                 <span>2019</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Full Stack Web Developer</span><small>Magazine Médica</small></h3>
-                <h6>Aug 2019 – Dez 2021</h6>
-                <p>Full Stack Web Developer Python / Django / JS / Firebird / PostgreSQL - E-commerce / Internal
+                <h3>
+                    <span lang="en">Full Stack Web Developer</span>
+                    <span lang="pt">Desenvolvedor Web Full Stack</span>
+                    <small>Magazine Médica</small>
+                </h3>
+                <h6 lang="en">Aug 2019 – Dez 2021</h6>
+                <h6 lang="pt">Ago 2019 – Dez 2021</h6>
+                <p lang="en">Full Stack Web Developer Python / Django / JS / Firebird / PostgreSQL - E-commerce / Internal
                     System Develop APIs, Front-End, Back-End with tests in TDD, Database Modeling, UX/UI and
                     Data Analysis.<br>
                     Bitbucket / Jira / Firebase / Financial Analysis / PostgreSQL / REST APIs
+                    / User Experience (UX) / Python / Django / Bootstrap / JavaScript</p>
+                <p lang="pt">Desenvolvedor Web Full Stack Python / Django / JS / Firebird / PostgreSQL - E-commerce / Desenvolvimento
+                    Interno de Sistemas e APIs, Front-End, Back-End com testes em TDD, Modelagem de banco de dados, UX/UI e
+                    Análise de dados.<br>
+                    Bitbucket / Jira / Firebase / Análise Financeira / PostgreSQL / REST APIs
                     / User Experience (UX) / Python / Django / Bootstrap / JavaScript</p>
               </div>
             </div>
@@ -256,12 +345,25 @@
                 <span>2018</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Database Analyst and Support</span><small>IXCSoft</small></h3>
-                <h6>Nov 2018 – Aug 2018</h6>
-                <p>SQL database migrations with DBs from external telecommunications systems to own system.
+                <h3>
+                    <span lang="en">Database Analyst and Support</span>
+                    <span lang="pt">Analista de Banco de Dados e Suporte</span>
+                    <small>IXCSoft</small>
+                </h3>
+                <h6 lang="en">Nov 2018 – Aug 2018</h6>
+                <h6 lang="pt">Nov 2018 – Ago 2018</h6>
+                <p>
+                    <span lang="en">SQL database migrations with DBs from external telecommunications systems to own system.
                     Maintenance in MySQL to ERP database.<br>
                     Analytical Skills / Microsoft SQL Server / PostgreSQL / Strategic Planning /
-                    Customer Service / SQL / MySQL / Firebird</p>
+                    Customer Service / SQL / MySQL / Firebird
+                    </span>
+                    <span lang="pt">Migrações de banco de dados SQL com BDs de sistemas de telecomunicações externos para sistema próprio.
+                    Manutenção em banco de dados MySQL para ERP.<br>
+                    Habilidades analíticas / Microsoft SQL Server / PostgreSQL / Planejamento estratégico /
+                    Serviço de Atendimento ao Cliente / SQL / MySQL / Firebird                    
+                    </span>
+                </p>
               </div>
             </div>
 
@@ -270,9 +372,17 @@
                 <span>2018</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Full Stack Web Developer Internship</span><small>Federal University of Fronteira Sul</small></h3>
+                <h3>
+                    <span lang="en">Full Stack Web Developer Internship</span>
+                    <span lang="pt">Desenvolvedor Estagiário Full Stack Web</span>
+                    <small lang="en">Federal University of Fronteira Sul</small>
+                    <small lang="pt">Universidade Federal da Fronteira Sul</small>
+                </h3>
                 <h6>Jan 2018 – Nov 2018</h6>
-                <p>Full Stack Web Python/Plone Developer - Institutional Site.<br>
+                <p>
+                    <span lang="en">Full Stack Web Python/Plone Developer - Institutional Site.</span>
+                    <span lang="pt">Desenvolvedor Web Full Stack Python/Plone - Site Institucional.</span>
+                    <br>
                     Plone / NoSQL / Python / Bootstrap / HTML5</p>
               </div>
             </div>
@@ -281,7 +391,8 @@
         </div>
 
         <div class="col-lg-6 col-12">
-          <h2 class="mb-4 mobile-mt-2">Educations</h2>
+          <h2 class="mb-4 mobile-mt-2" lang="en">Educations</h2>
+          <h2 class="mb-4 mobile-mt-2" lang="pt">Educação</h2>
 
           <div class="timeline">
             <div class="timeline-wrapper">
@@ -289,8 +400,12 @@
                 <span>2018</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Bachelor's degree, Computer Science</span><small>UFFS - University Federal of Fronteira
-                    Sul</small></h3>
+                <h3>
+                    <span lang="en">Bachelor's degree, Computer Science</span>
+                    <small lang="en">UFFS - University Federal of Fronteira Sul</small>
+                    <span lang="pt">Bacharel, Ciência da Computação</span>
+                    <small lang="pt">UFFS - Universidade Federal da Fronteira Sul</small>
+                </h3>
               </div>
             </div>
           </div>
@@ -301,8 +416,11 @@
                 <span>2020</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Postgraduate Systems Analysis, Design and Management</span><small>
-                    UNOPAR - Universidade Norte do Paraná</small></h3>
+                <h3>
+                    <span lang="en">Postgraduate, Systems Analysis, Design and Management</span>
+                    <span lang="pt">Pós-graduação, Análise, Projeto e Gestão de Sistemas</span>
+                    <small>UNOPAR - Universidade Norte do Paraná</small>
+                </h3>
               </div>
             </div>
           </div>
@@ -313,7 +431,11 @@
                 <span>2021</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Postgraduate UX Design e Learning Experience</span><small>Instituto de Desenho Instrucional</small></h3>
+                <h3>
+                    <span lang="en">Postgraduate, UX Design e Learning Experience</span>
+                    <span lang="pt">Pós-graduação, UX Design e Learning Experience</span>
+                    <small>Instituto de Desenho Instrucional</small>
+                </h3>
               </div>
             </div>
           </div>
@@ -324,7 +446,10 @@
                 <span>2021</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Postgraduate Cloud Computing Projects / Management </span><small>Descomplica</small></h3>
+                <h3>
+                    <span lang="en">Postgraduate, Cloud Computing Projects / Management </span>
+                    <span lang="pt">Pós-graduação, Projetos / Gestão de Computação em Nuvem</span>
+                    <small>Descomplica</small></h3>
               </div>
             </div>
           </div>
@@ -335,7 +460,11 @@
                 <span>2021</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Postgraduate General Data Protection Law – GDPL / LGPD</span><small>Faculdade Legale</small></h3>
+                <h3>
+                    <span lang="en">Postgraduate, General Data Protection Law – GDPL / LGPD</span>
+                    <span lang="pt">Pós-graduação, Lei Geral de Proteção de Dados – GDPL / LGPD</span>
+                    <small>Faculdade Legale</small>
+                </h3>
               </div>
             </div>
           </div>
@@ -346,8 +475,13 @@
                 <span>2022</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Accounting</span><small>FASPEC</small></h3>
-                <p>Technical Education</p>
+                <h3>
+                    <span lang="en">Accounting</span>
+                    <span lang="pt">Contabilidade</span>
+                    <small>FASPEC</small>
+                </h3>
+                <p lang="en">Technical Education</p>
+                <p lang="pt">Técnico</p>
               </div>
             </div>
           </div>
@@ -358,8 +492,12 @@
                 <span>2023</span>
               </div>
               <div class="timeline-info">
-                <h3><span>Postgraduate Technologies for Professional Education </span><small>
-                    IFSC - Federal Institute of Santa Catarina</small></h3>
+                <h3>
+                    <span lang="en">Postgraduate, Technologies for Professional Education </span>
+                    <small lang="en">IFSC - Federal Institute of Santa Catarina</small>
+                    <span lang="pt">Pós-Graduação em Tecnologias para Educação Profissional </span>
+                    <small lang="pt">IFSC - Instituto Federal de Santa Catarina</small>
+                </h3>
               </div>
             </div>
           </div>
@@ -384,7 +522,8 @@
 
           <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
             <div class="contact-info-item">
-              <h3 class="mb-3 text-white">Send me an email</h3>
+              <h3 class="mb-3 text-white" lang="en">Send me an email</h3>
+              <h3 class="mb-3 text-white" lang="pt">Envie me um email</h3>
               <p class="footer-text mb-0">+55 49 98820-0391</p>
               <p><a href="mailto:riquejdc@gmail.com">riquejdc@gmail.com</a></p>
             </div>
@@ -439,8 +578,13 @@
       <div class="row">
 
         <div class="col-lg-12 col-12">
-          <p class="copyright-text text-center">Copyright &copy;
+          <p class="copyright-text text-center" lang="en">
+            Copyright &copy;
             <script>document.write(new Date().getFullYear())</script> henriquejdc. All rights reserved
+          </p>
+          <p class="copyright-text text-center" lang="pt">
+            Direito autoral &copy;
+            <script>document.write(new Date().getFullYear())</script> henriquejdc. Todos os direitos reservados
           </p>
         </div>
 
@@ -457,8 +601,9 @@
   <script src="js/smoothscroll.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/custom_language.js"></script>
+  <script src="js/jquery.cookie.js"></script>
   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 

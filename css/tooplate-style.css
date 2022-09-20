@@ -268,6 +268,11 @@ b, strong {
   cursor: pointer;
 }
 
+.change-language {
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .color-mode-icon {
   position: relative;
   right: 6px;
@@ -309,6 +314,9 @@ b, strong {
 .dark-mode .color-mode {
   color: #ffffff;
 }
+.dark-mode .change-language {
+    color: #ffffff;
+  }
 .dark-mode .owl-carousel .owl-nav button.owl-next,
 .dark-mode .owl-carousel .owl-nav button.owl-prev,
 .dark-mode .owl-carousel button.owl-dot {
