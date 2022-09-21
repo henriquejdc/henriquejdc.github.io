@@ -248,7 +248,7 @@ b, strong {
   bottom: 1px;
 }
 .navbar-toggler .navbar-toggler-icon {
-  background: #212121;
+  background: #4b3cd8;
   display: block;
   width: 100%;
   height: 2px;
@@ -484,8 +484,26 @@ b, strong {
     padding-bottom: 4rem;
   }
 
-  .color-mode {
+  /* .color-mode {
     display: none;
+  } */
+
+  .dark-mode .navbar-light .navbar-nav .nav-link {
+    color:#4b3cd8;
+  }
+
+  .dark-mode .change-language {
+    color: #4b3cd8;
+  }
+  
+  .dark-mode .feature-card .uil, .dark-mode .navbar-light .navbar-brand, 
+  .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, 
+  .dark-mode h5, .dark-mode h6, .dark-mode .color-mode{
+    color: #4b3cd8;
+  }
+
+  .dark-mode .color-mode-icon.active:after {
+    color: #4b3cd8;
   }
 
   .about-image {
