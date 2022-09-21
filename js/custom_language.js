@@ -34,6 +34,7 @@ $(function () {
         langButtonListen();
       }
     } else {
+      $('[lang="pt"]').hide();
       // no cookie set, so detect language based on location.
       if ("geolocation" in navigator) {
         // geolocation is available
@@ -48,21 +49,19 @@ $(function () {
                 var country = response.results[response.results.length-1].formatted_address;
                 if (country ===  'Brazil' || country === 'Portugal') {
                   $('[lang="en"]').hide();
+                  $('[lang="pt"]').show();
                   $.cookie('lang', 'pt', { expires: 7 });
                   langButtonListen();
                 } else {
-                    $('[lang="pt"]').hide();
                     $.cookie('lang', 'en', { expires: 7 });
                     langButtonListen();
                 }
             } else {
-                $('[lang="pt"]').hide();
                 $.cookie('lang', 'en', { expires: 7 });
                 langButtonListen();
             }
           }).fail(function (err) {
             console.log('error: '+err);
-            $('[lang="pt"]').hide();
             $.cookie('lang', 'en', { expires: 7 });
             langButtonListen();
           });
@@ -70,12 +69,10 @@ $(function () {
         function (error) {
           if (error.code == error.PERMISSION_DENIED) {
             // denied geolocation
-            $('[lang="pt"]').hide();
             $.cookie('lang', 'en', { expires: 7 });
             langButtonListen();
           } else {
             console.log('Unknown error. Defaulting to English!');
-            $('[lang="pt"]').hide();
             $.cookie('lang', 'en', { expires: 7 });
             langButtonListen();
           }
