@@ -34,7 +34,8 @@ $(function () {
         langButtonListen();
       }
     } else {
-        var get_lang = location.href.split("=").pop();
+        var url_ = new URL(location.href);
+        var get_lang = url_.searchParams.get("lang");
         if (get_lang == "pt") {
             $('[lang="en"]').hide();
             $.cookie('lang', 'pt', { expires: 7 });
