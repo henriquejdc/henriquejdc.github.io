@@ -63,3 +63,17 @@ $('#form-email').on('submit', function (e) {
       button.css('background-color', '#4b3cd8')
     })
 })
+
+$('#hamburger').on('click', function() {
+    $('#menu').slideToggle('slow');
+    var subtitle_show = document.getElementById("subtitle_show");
+    var subtitle_hide = document.getElementById("subtitle_hide");
+
+    if (subtitle_show.style.display === "none") {
+        subtitle_show.style.display = "block";
+        subtitle_hide.style.display = "none";
+    } else {
+        subtitle_show.style.display = "none";
+        subtitle_hide.style.display = "block";
+    }
+});

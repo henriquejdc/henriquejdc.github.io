@@ -594,3 +594,21 @@ b, strong {
     vertical-align: top;
   }
 }
+
+.button-mais {
+    background-color: #726bad;
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+    outline: none;
+    cursor: pointer;
+    min-width: 250px;
+}
+
+.button-mais:hover {
+    background-color: #4b3cd8;
+}
+
+.menu {
+    display: none
+}
