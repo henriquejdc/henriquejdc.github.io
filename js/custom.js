@@ -60,7 +60,7 @@ $('#form-email').on('submit', function (e) {
       })
       button.val(old_text_button)
       button.prop("disabled", false);
-      button.css('background-color', '#4b3cd8')
+      button.css('background-color', '#258322')
     })
 })
 
