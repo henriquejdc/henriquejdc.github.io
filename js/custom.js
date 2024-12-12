@@ -77,3 +77,17 @@ $('#hamburger').on('click', function() {
         subtitle_hide.style.display = "block";
     }
 });
+
+$('#hamburger2').on('click', function() {
+    $('#menu-two').slideToggle('slow');
+    var subtitle_show_two = document.getElementById("subtitle_show_two");
+    var subtitle_hide_two = document.getElementById("subtitle_hide_two");
+
+    if (subtitle_show_two.style.display === "none") {
+        subtitle_show_two.style.display = "block";
+        subtitle_hide_two.style.display = "none";
+    } else {
+        subtitle_show_two.style.display = "none";
+        subtitle_hide_two.style.display = "block";
+    }
+});

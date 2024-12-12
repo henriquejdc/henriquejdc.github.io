@@ -620,3 +620,21 @@ b, strong {
 .menu {
     display: none
 }
+
+.button-mais-two {
+    background-color: #6bad74;
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+    outline: none;
+    cursor: pointer;
+    min-width: 250px;
+}
+
+.button-mais-two:hover {
+    background-color: #258322;
+}
+
+.menu-two {
+    display: none
+}
