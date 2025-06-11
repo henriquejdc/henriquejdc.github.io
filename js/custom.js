@@ -1,64 +1,35 @@
 (function ($) {
 
-  "use strict";
+    "use strict";
 
-  // HEADER
-  $(".navbar").headroom();
+    // HEADER
+    $(".navbar").headroom();
 
-  // PROJECT CAROUSEL
-  $('.owl-carousel').owlCarousel({
-    items: 1,
-    loop: true,
-    margin: 10,
-    nav: true
-  });
-
-  // SMOOTHSCROLL
-  $(function () {
-    $('.nav-link, .custom-btn-link').on('click', function (event) {
-      var $anchor = $(this);
-      $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top - 49
-      }, 1000);
-      event.preventDefault();
+    // PROJECT CAROUSEL
+    $('.owl-carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        nav: true
     });
-  });
 
-  // TOOLTIP
-  $('.social-links a').tooltip();
+    // SMOOTHSCROLL
+    $(function () {
+        $('.nav-link, .custom-btn-link').on('click', function (event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 49
+            }, 1000);
+            event.preventDefault();
+        });
+    });
+
+    // TOOLTIP
+    $('.social-links a').tooltip();
 
 })(jQuery);
-$('#form-email').on('submit', function (e) {
-  e.preventDefault()
-  const button = $("#send-email-button")
-  let old_text_button = button.val()
-  button.val('Sending your email...')
-  button.prop("disabled", true);
-  button.css('background-color', 'grey')
-  Email.send({
-    SecureToken: "39a25dfe-87f6-421d-b378-5cdff3686249",
-    To: 'riquejdc@gmail.com',
-    From: 'riquejdc@gmail.com',
-    Subject: `${this.name.value} deseja conversar com você.`,
-    Body: `${this.message.value} \n email: ${this.email.value}`,
-  })
-    .then(response => {
-      console.log(response)
-      $('#form-email').each(function () {
-        this.reset();
-      });
-      Swal.fire({
-        icon: 'success',
-        title: 'Email successfully sent.',
-        text: "I'll answer as soon as possible",
-      })
-      button.val(old_text_button)
-      button.prop("disabled", false);
-      button.css('background-color', '#258322')
-    })
-})
 
-$('#hamburger').on('click', function() {
+$('#hamburger').on('click', function () {
     $('#menu').slideToggle('slow');
     var subtitle_show = document.getElementById("subtitle_show");
     var subtitle_hide = document.getElementById("subtitle_hide");
@@ -72,7 +43,7 @@ $('#hamburger').on('click', function() {
     }
 });
 
-$('#hamburger2').on('click', function() {
+$('#hamburger2').on('click', function () {
     $('#menu-two').slideToggle('slow');
     var subtitle_show_two = document.getElementById("subtitle_show_two");
     var subtitle_hide_two = document.getElementById("subtitle_hide_two");
@@ -84,4 +55,33 @@ $('#hamburger2').on('click', function() {
         subtitle_show_two.style.display = "none";
         subtitle_hide_two.style.display = "block";
     }
+});
+
+function saudacaoComFuso(is_pt) {
+    const fuso = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const agora = new Date();
+    const hora = agora.getHours();
+
+    let saudacao;
+    if (hora >= 5 && hora < 12) {
+        saudacao = "Bom dia";
+        greeting = "Good morning";
+    } else if (hora >= 12 && hora < 18) {
+        saudacao = "Boa tarde";
+        greeting = "Good afternoon";
+    } else {
+        saudacao = "Boa noite";
+        greeting = "Goodnight";
+    }
+    if (is_pt) {
+        return `${saudacao}!`;
+    } else {
+        return `${greeting}!`;
+    }
+}
+
+
+$(function () {
+    $('#saudacao').text(saudacaoComFuso(true));
+    $('#greeting').text(saudacaoComFuso(false));
 });
